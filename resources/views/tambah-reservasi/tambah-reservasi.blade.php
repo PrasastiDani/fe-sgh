@@ -49,22 +49,18 @@
                                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                             </div>
                             <div>
-                                <label for="night" class="block mb-2 text-sm font-medium text-gray-900">Night</label>
+                                <label for="night-input" class="block mb-2 text-sm font-medium text-gray-900">Night</label>
                                 <div class="flex">
-                                    <button type="button"
-                                        class="inline-flex items-center justify-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-l-lg w-12">
-                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M20 12H4" />
+                                    <button type="button" id="decrement-button" data-input-counter-decrement="night-input" class="bg-blue-600 hover:bg-blue-800 border border-blue-300 rounded-s-lg p-3 h-11 focus:ring-blue-100 focus:ring-2 focus:outline-none">
+                                        <svg class="w-3 h-3 text-gray-900 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h16"/>
                                         </svg>
                                     </button>
-                                    <input type="number" id="night" min="0" value="0"
-                                        class="bg-gray-50 border-y border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 text-center [-moz-appearance:_textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none">
-                                    <button type="button"
-                                        class="inline-flex items-center justify-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-r-lg w-12">
-                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M12 4v16m8-8H4" />
+                                    <input type="text" id="night-input" data-input-counter data-input-counter-min="0"  aria-describedby="helper-text-explanation"
+                                        class="bg-gray-50 border-y border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 text-center">
+                                    <button type="button" id="increment-button" data-input-counter-increment="night-input" class="bg-blue-600 hover:bg-blue-800 border border-blue-300 rounded-e-lg p-3 h-11 focus:ring-blue-100 focus:ring-2 focus:outline-none">
+                                        <svg class="w-3 h-3 text-gray-900 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
                                         </svg>
                                     </button>
                                 </div>
@@ -73,26 +69,22 @@
                                 <label for="departure_date" class="block mb-2 text-sm font-medium text-gray-900">
                                     Departure Date
                                 </label>
-                                <input type="date" id="departure_date"
+                                <input type="date" id="departure_date" disabled
                                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                             </div>
                             <div>
-                                <label for="person" class="block mb-2 text-sm font-medium text-gray-900">Person</label>
+                                <label for="person-input" class="block mb-2 text-sm font-medium text-gray-900">Person</label>
                                 <div class="flex">
-                                    <button type="button" data-input-id="person"
-                                        class="number-decrease inline-flex items-center justify-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-l-lg w-12">
-                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M20 12H4" />
+                                    <button type="button" id="decrement-button" data-input-counter-decrement="person-input" class="bg-blue-600 hover:bg-blue-800 border border-blue-300 rounded-s-lg p-3 h-11 focus:ring-blue-100 focus:ring-2 focus:outline-none">
+                                        <svg class="w-3 h-3 text-gray-900 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h16"/>
                                         </svg>
                                     </button>
-                                    <input type="number" id="person" min="1" value="0"
+                                    <input type="text" id="person-input" data-input-counter data-input-counter-min="0"  aria-describedby="helper-text-explanation"
                                         class="bg-gray-50 border-y border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 text-center">
-                                    <button type="button" data-input-id="person"
-                                        class="number-increase inline-flex items-center justify-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-r-lg w-12">
-                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M12 4v16m8-8H4" />
+                                    <button type="button" id="increment-button" data-input-counter-increment="person-input" class="bg-blue-600 hover:bg-blue-800 border border-blue-300 rounded-e-lg p-3 h-11 focus:ring-blue-100 focus:ring-2 focus:outline-none">
+                                        <svg class="w-3 h-3 text-gray-900 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
                                         </svg>
                                     </button>
                                 </div>
@@ -105,23 +97,18 @@
                         <!-- Right column -->
                         <div class="flex-1 space-y-6 md:pl-8">
                             <div>
-                                <label for="room_quantity" class="block mb-2 text-sm font-medium text-gray-900">Room
-                                    Quantity</label>
+                                <label for="quantity-input" class="block mb-2 text-sm font-medium text-gray-900">Quantity</label>
                                 <div class="flex">
-                                    <button type="button" data-input-id="room_quantity"
-                                        class="number-decrease inline-flex items-center justify-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-l-lg w-12">
-                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M20 12H4" />
+                                    <button type="button" id="decrement-button" data-input-counter-decrement="quantity-input" class="bg-blue-600 hover:bg-blue-800 border border-blue-300 rounded-s-lg p-3 h-11 focus:ring-blue-100 focus:ring-2 focus:outline-none">
+                                        <svg class="w-3 h-3 text-gray-900 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h16"/>
                                         </svg>
                                     </button>
-                                    <input type="number" id="room_quantity" min="1" value="0"
-                                        class="bg-gray-50 border-y border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 text-center [-moz-appearance:_textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none">
-                                    <button type="button" data-input-id="room_quantity"
-                                        class="number-increase inline-flex items-center justify-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-r-lg w-12">
-                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M12 4v16m8-8H4" />
+                                    <input type="text" id="quantity-input" data-input-counter data-input-counter-min="0"  aria-describedby="helper-text-explanation"
+                                        class="bg-gray-50 border-y border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 text-center">
+                                    <button type="button" id="increment-button" data-input-counter-increment="quantity-input" class="bg-blue-600 hover:bg-blue-800 border border-blue-300 rounded-e-lg p-3 h-11 focus:ring-blue-100 focus:ring-2 focus:outline-none">
+                                        <svg class="w-3 h-3 text-gray-900 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
                                         </svg>
                                     </button>
                                 </div>
@@ -220,10 +207,10 @@
                         <div class="flex items-center space-x-4">
                             <div class="flex items-center space-x-4">
                                 <label class="block text-sm font-medium text-gray-700">Group</label>
-                                <label class="relative inline-flex items-center cursor-pointer">
-                                    <input type="checkbox" class="sr-only peer">
+                                <label class="inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" value="" class="sr-only peer">
                                     <div
-                                        class="w-11 h-6 bg-gray-300 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600">
+                                        class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer peer-checked:after:translate-x-5 rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600">
                                     </div>
                                 </label>
                             </div>

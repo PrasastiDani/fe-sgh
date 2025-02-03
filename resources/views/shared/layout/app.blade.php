@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Satya Graha Hotel</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.1/dist/flowbite.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
 
     <style>
@@ -17,17 +17,6 @@
             font-family: 'Poppins', sans-serif;
         }
 
-        /* Chrome, Safari, Edge, Opera */
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-
-        /* Firefox */
-        input[type=number] {
-            -moz-appearance: textfield;
-        }
     </style>
 </head>
 
@@ -45,8 +34,9 @@
     @include('shared.component.footer')
     {{-- footer end --}}
 
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.1/dist/flowbite.min.js"></script>
+
     {{-- script dropdown menu start --}}
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <script>
         const dropdownButton = document.getElementById('dropdownButton');
         const dropdownMenu = document.getElementById('dropdownMenu');
@@ -86,7 +76,7 @@
     </script>
 
     {{-- script arrival, night, departure start --}}
-    <script>
+    {{-- <script>
         document.addEventListener('DOMContentLoaded', () => {
             const arrivalDateInput = document.getElementById('arrival_date');
             const nightInput = document.getElementById('night');
@@ -141,11 +131,11 @@
                 }
             });
         });
-    </script>
+    </script> --}}
     {{-- script arival, night, departure end --}}
 
     {{-- script toggle and group name start --}}
-    <script>
+    {{-- <script>
         document.addEventListener('DOMContentLoaded', () => {
             const groupToggle = document.querySelector('input[type="checkbox"]');
             const groupNameInput = document.querySelector('input[placeholder="Group Name"]');
@@ -167,7 +157,7 @@
                 }
             });
         });
-    </script>
+    </script> --}}
     {{-- script toggle and group name end --}}
 </body>
 
