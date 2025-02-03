@@ -76,7 +76,7 @@
     </script>
 
     {{-- script arrival, night, departure start --}}
-    {{-- <script>
+    <script>
         document.addEventListener('DOMContentLoaded', () => {
             const arrivalDateInput = document.getElementById('arrival_date');
             const nightInput = document.getElementById('night');
@@ -131,11 +131,11 @@
                 }
             });
         });
-    </script> --}}
+    </script>
     {{-- script arival, night, departure end --}}
 
     {{-- script toggle and group name start --}}
-    {{-- <script>
+    <script>
         document.addEventListener('DOMContentLoaded', () => {
             const groupToggle = document.querySelector('input[type="checkbox"]');
             const groupNameInput = document.querySelector('input[placeholder="Group Name"]');
@@ -157,7 +157,7 @@
                 }
             });
         });
-    </script> --}}
+    </script>
     {{-- script toggle and group name end --}}
 </body>
 
