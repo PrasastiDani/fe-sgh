@@ -32,3 +32,7 @@ Route::get('/company', function () {
 Route::get('/detail-company', function () {
     return view('detail-company.detail-company');
 })->name('detail-company');
+
+Route::get('/detail-reservasi', function () {
+    return view('detail-reservasi.detail-reservasi');
+})->name('detail-reservasi');
