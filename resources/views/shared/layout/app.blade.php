@@ -7,19 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Satya Graha Hotel</title>
 
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.1/dist/flowbite.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-
-    </style>
 </head>
 
-<body style="background-color: #F3F4F6">
+<body style="background-color: #F3F4F6; font-family: 'Poppins';">
 
     {{-- navbar start --}}
     @include('shared.component.nav')
@@ -34,6 +28,7 @@
     {{-- footer end --}}
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.1/dist/flowbite.min.js"></script>
+
 
     {{-- script dropdown menu start --}}
     <script>

@@ -4,7 +4,7 @@
     <div class="container mx-auto px-12 max-w-screen-xl">
         <div class="pt-20 pb-8">
             <div class="bg-gradient-to-r from-blue-600 to-transparent rounded-lg mb-8 p-6">
-                <h2 class="text-2xl font-bold text-white mb-2">Detail Reservasi</h2>
+                <h2 class="text-2xl font-bold text-white mb-2">Tambah Reservasi</h2>
             </div>
 
             <!-- Form Content -->
